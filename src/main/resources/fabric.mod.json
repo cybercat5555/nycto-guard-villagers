@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "nyctoguardvillagers",
+  "version": "${version}",
+  "name": "Nycto: Guard Villagers",
+  "description": "Allows Guard Villagers to be thralled using Nycto",
+  "authors": [
+	"MoriyaShiine",
+	"cybercat5555"
+  ],
+  "contact": {
+	"homepage": "https://modrinth.com/project/nycto-guard-villagers",
+	"sources": "https://github.com/cybercat5555/nycto-guard-villagers",
+	"issues": "https://github.com/cybercat5555/nycto/nycto-guard-villagers"
+  },
+  "license": "MIT",
+  "icon": "assets/nyctoguardvillagers/icon.png",
+  "environment": "*",
+  "entrypoints": {
+	"fabric-datagen": [
+	  "cybercat5555.nyctoguardvillagers.data.ModDataGenerator"
+	],
+	"client": [
+	  "cybercat5555.nyctoguardvillagers.client.NyctoGuardVillagersClient"
+	]
+  },
+  "depends": {
+	"fabricloader": "*",
+	"minecraft": "~26.1",
+	"java": ">=25",
+	"fabric-api": "*",
+	"nycto": "*",
+	"guardvillagers": "*"
+  }
+}
